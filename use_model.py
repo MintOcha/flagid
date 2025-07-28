@@ -38,7 +38,6 @@ state_dict = torch.load(model_path, map_location=device)
 cleaned_state_dict = OrderedDict()
 prefix_to_strip = '_orig_mod.'
 for k, v in state_dict.items():
-    print(f"Processing key: {k}")
     if k.startswith(prefix_to_strip):
         name = k[len(prefix_to_strip):]
         cleaned_state_dict[name] = v
