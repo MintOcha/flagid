@@ -1,5 +1,5 @@
-# flagid
-AI flag identification program (Can ID any picture)
+# flagid 🏳️
+AI country flag identification neural network for detecting country flags in photos, based on efficientnet08.
 Fast 92% accurate AI flag identifier, trained on world flag dataset. 
 
 ## Features:
@@ -30,3 +30,7 @@ pip install torch torchvision pillow numpy requests opencv-python selenium webdr
 I hope i made this easy to use :)
 
 <img width="1832" height="915" alt="image" src="https://github.com/user-attachments/assets/231633de-d662-4d54-bb4b-ee74bd339bbf" />
+
+Examples:
+<img width="1560" height="1393" alt="image" src="https://github.com/user-attachments/assets/2c0c9f1c-5b0b-47b1-83dc-007cd76f679d" />
+
