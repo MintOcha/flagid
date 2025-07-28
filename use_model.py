@@ -81,6 +81,10 @@ if __name__ == '__main__':
     if os.path.exists(test_image_path):
         predicted_country, confidence = predict_flag(image)
         if predicted_country:
+            # Convert back to name
+            with open("country_codes.json", 'r', encoding='utf-8') as f:
+                country_codes = json.load(f)
+                predicted_country = [name for name, code in country_codes.items() if code == predicted_country.upper()][0]
             print(f"Predicted country: {predicted_country} (Confidence: {confidence:.4f})")
     else:
         print(f"Test image not found at: {test_image_path}")
